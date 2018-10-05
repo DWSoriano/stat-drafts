@@ -14,7 +14,7 @@ structure for your report. Your report should be no more than 12 pages, includin
 any.
 
 ```{r setup, echo = FALSE, message=FALSE, warning=FALSE}
-# load in useful packages
+# load in packages
 library(tidyverse)
 library(forcats)
 library(lubridate)
@@ -23,6 +23,8 @@ library(ggplot2)
 library(gridExtra)
 library(maps)
 library(kableExtra)
+library(expss)
+library(leaflet)
 # load in the loadData() functions
 source("R/load.R")
 # load in the cleanData() functions
@@ -44,9 +46,8 @@ load("data/question_data.RData")
 
 # load US state map data
 state_df <- map_data("state")
+
 ```
-
-
 # Introduction
 
 
